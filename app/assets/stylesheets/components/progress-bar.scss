@@ -1,0 +1,10 @@
+$progress-bar-passed-item-color: #129c00;
+
+
+.progress-bar {
+  &__item {
+    &--passed {
+      color: $progress-bar-passed-item-color;
+    }
+  }
+}

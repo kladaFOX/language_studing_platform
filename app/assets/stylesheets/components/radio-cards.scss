@@ -1,0 +1,36 @@
+$selected-card-highlight-color: #129c00;
+$selected-card-highlight-width: 4px;
+$max-cards-per-row: 4;
+$card-height: 140px;
+
+.radio-cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 100%/$max-cards-per-row;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+
+    .radio-cards__input:checked + & {
+      border-bottom: $selected-card-highlight-width solid $selected-card-highlight-color;
+    }
+  }
+
+  &__image {
+    height: $card-height;
+  }
+}
+
+.radio-cards--one-line {
+  justify-content: space-around;
+}

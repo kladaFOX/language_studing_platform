@@ -1,0 +1,1 @@
+Academy::OnboardingOptionsSeeds.new.perform

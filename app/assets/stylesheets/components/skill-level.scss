@@ -1,0 +1,29 @@
+$number-of-levels: 11;
+$skill-level-vertical-padding: 32px;
+
+.skill-level {
+  padding: $skill-level-vertical-padding 0;
+  display: flex;
+
+  &__item {
+    position: relative;
+    text-align: center;
+    width: 100%/$number-of-levels;
+  }
+
+  &__item-label {
+    position: absolute;
+    display: block;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  &__item-text {
+    position: absolute;
+    top: -$skill-level-vertical-padding;
+    left: 0;
+    right: 0;
+  }
+}

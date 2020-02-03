@@ -1,0 +1,63 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  general:
+    next: Next
+    back: Back
+  onboarding:
+    steps:
+      language: Language
+      reasons: Reason
+      skill: Skill Level
+      books: Books
+      needs: Needs
+      exam: Exam Date
+      plan: Plan
+      booking: Booking
+    skill:
+      a1_short: Starter
+      a1_long: "Everyday language: greetings, personal details"
+      a2_short: Elementary
+      a2_long: "Survival language: family, shopping, routines"
+      b1_short: Intermediate
+      b1_long: "Practical language: work, school, travel"
+      b2_short: Upper-Intermediate
+      b2_long: "Conversational language: in-depth discussion, opinions, spontaneity"
+      c1_short: Expert
+      c1_long: "Proficient language: complexity, sub-text, near-fluency"
+      c2_short: Mastery
+      c2_long: "At this point, there are no lessons – you just need to talk and read and listen to native speakers to perfect your French."
+      in_not_sure: I'm not sure yet
+    books:
+      other: Other Books
+      other_label: Please write these other book titles
+
